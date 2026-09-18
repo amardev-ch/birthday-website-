@@ -24,11 +24,14 @@
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
+            overflow: hidden;
         }
 
         .container {
             max-width: 600px;
             padding: 30px;
+            position: relative;
+            z-index: 2;
         }
 
         .small {
@@ -62,31 +65,17 @@
         }
 
         button:hover {
-            transform: scale(1.05);
+            transform: scale(1.08);
         }
-    </style>
-</head>
 
-<body>
+        #message {
+            display: none;
+            margin-top: 25px;
+            font-size: 22px;
+            color: white;
+            animation: appear 0.5s ease;
+        }
 
-    <div class="container">
-
-        <div class="small">FÜR ELENI 🎉</div>
-
-        <h1>Happy Birthday 🎂</h1>
-
-        <p>
-            Ich hoffe, du hast einen schönen Tag und kannst in'sha'allah
-            noch 100 Jahre gesund mit deiner Familie verbringen. ❤️
-        </p>
-
-        <button onclick="alert('🎉 HAPPY BIRTHDAY 🎉')">
-            Klick mich 👀
-        </button>
-
-    </div>
-
-</body>
-
-</html>
+        @keyframes appear {
+            from {
 ```
