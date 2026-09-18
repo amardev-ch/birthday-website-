@@ -1,15 +1,91 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Happy Birthday 🎂</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 30px;
+        }
+
+        .small {
+            font-size: 15px;
+            color: #999;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #111;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Happy Birthday 🎂</h1>
-    <p>Heute geht's nur um dich.</p>
+    <div class="container">
+
+        <div class="small">YOUR SPECIAL DAY 🎉</div>
+
+        <h1>Happy Birthday 🎂</h1>
+
+        <p>
+            Alles Gute zum Geburtstag! 🎉<br>
+            Ich hoffe, du hast einen schönen Tag und bekommst ordentlich Kuchen 😂<br>
+            Feier schön!
+        </p>
+
+        <button onclick="alert('🎉 HAPPY BIRTHDAY 🎉')">
+            Klick mich 👀
+        </button>
+
+    </div>
 
 </body>
+
 </html>
